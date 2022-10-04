@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4 {
+    font-size: 20px;
+    color: #222;
+
+}
+
+h6 {
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+
+}
+
+.section-m1 {
+    margin: 40px 0;
+    ;
+}
+
+body {
+    width: 100%;
+}
+
+/* this is hedear this used for manu esayly left side*/
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    /* this effect used for manu bar */
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+}
+
+/* this change for navbar to used home contect etc. statlin */
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* this is used for manu bar sum space and perfect lin (li)*/
+/* use ul id */
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+/* so remove the menubar underline so :target li [a] follwoing type */
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    /* menu effect smuthly effect manu */
+    transition: 0.3s ease
+}
+
+/* this is for menu color effect */
+
+/* second line use for the manu underline effect brandly and loking and we compalsary used a class */
+#navbar li a:hover,
+#navbar li a.active {
+
+    color: blue;
+
+}
+
+/* every time we used  the undrer line manu efect we used the follwoing steps  */
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 1px;
+    background: blue;
+    position: absolute;
+    bottom: -4px;
+    left: 26px;
+}
+
+#hero {
+    height: 100vw;
+    width: 70%;
+    /* padding: 0 80px; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: relative;
+}
+
+#hero img {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 53px;
+}
+/* #hero h4 {
+    padding-bottom: 15px;
+
+}
+
+#hero p {
+    padding: 20px;
+} */
+
+#hero h1 {
+    color: #088178;
+}
+
+h4,
+p,
+h1,
+h2,
+button {
+    z-index: 10;
+}
+
+/* #btn {
+    padding: 14px 80px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #088178;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    font-weight: 100;
+ } */
+
+
+/* product of css */
+
+#product1 {
+    text-align: center;
+
+}
+/* >>>>>>>>>>>>>>>>>>>>this is for the products <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+#product1 .pro-container{
+
+display: flex;
+justify-content: space-between;
+padding-top: 20px;
+
+/* so next css for product problem this used for the product proper line  */
+flex-wrap: wrap;
+
+}
+
+
+#product1 .pro {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 15px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+#product1 .pro:hover {
+    box-shadow: 50px 50px 50px rgba(0, 0, 0, 0.06);
+
+}
+
+#product1 .pro img {
+    width: 100%;
+    border-radius: 20px;
+
+}
+
+#product1 .pro .des {
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product1 .pro .des span {
+    color: #606063;
+    font-size: 12px;
+
+}
+
+#product1 .pro .des h5 {
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+
+}
+
+#product1 .pro .des i {
+    font-size: 12px;
+    color: rgba(243, 181, 25);
+}
+
+#product1 .pro .des h4 {
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+}
+
+#product1 .pro .cart {
+    width: 40px;
+    height: 40px;
+    line-height: 50px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    color: #088178;
+    border: 1px solid #e8f6ea;
+    position: absolute;
+    bottom: 20px;
+    right: inherit;
+    bottom: 20px;
+    right: 10px;
+}
+
+/* this is for background video>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.back-video{
+    position:relative ;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+ 
+}
+
+@media(min-aspect-ratio)
+   {
+    .back-video{
+        width: 100%;
+        height: auto;
+
+    }
+   }
+
+   @media(max-aspect-ratio)
+   {
+    .back-video{
+        width: auto;
+        height: 100%;
+
+    }
+   }
+
+   /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+   .hero {
+    height: 100vh;
+    width: 70%;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: relative;
+}
+
+.hero img {
+    width: 100%; 
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 53px;
+    box-shadow: #0123ba;
+
+}
+.hero :hover{
+     color: #088178;
+}
